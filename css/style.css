@@ -1,0 +1,26 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    margin-top: 50px;
+}
+
+/* Img */
+.img-container {
+    width: 90%;
+    margin: auto;
+}
+
+.img-container img {
+    width: 100%;
+}
