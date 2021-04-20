@@ -17,6 +17,13 @@ var app = new Vue(
                } else {
                    this.activeImage = this.activeImage + 1;
                }
+           },
+           prevImage() {
+               if ( this.activeImage == 0 ) {
+                   this.activeImage = this.images.length - 1;
+               } else {
+                   this.activeImage = this.activeImage - 1;
+               }
            }
         }
     }
