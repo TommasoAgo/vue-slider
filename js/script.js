@@ -11,7 +11,13 @@ var app = new Vue(
             ]
         },
         methods : {
-           
+           nextImage() {
+               if ( this.activeImage == this.images.length - 1 ) {
+                   this.activeImage = 0;
+               } else {
+                   this.activeImage = this.activeImage + 1;
+               }
+           }
         }
     }
 );
