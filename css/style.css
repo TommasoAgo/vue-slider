@@ -13,6 +13,8 @@
     margin: auto;
 
     margin-top: 50px;
+
+    position: relative;
 }
 
 /* Img */
@@ -23,4 +25,31 @@
 
 .img-container img {
     width: 100%;
+}
+
+/* Arrows */
+.arrow {
+    cursor: pointer;
+
+    font-size: 40px;
+}
+
+/* Circles */
+.circles {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding: 20px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+
+    border-radius: 999px;
+}
+
+.fa-circle {
+    color: white;
+
+    margin: 0 5px;
 }
