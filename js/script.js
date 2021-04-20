@@ -25,6 +25,11 @@ var app = new Vue(
                    this.activeImage = this.activeImage - 1;
                }
            }
+        },
+        created() {
+            setInterval(() => {
+                this.nextImage()
+            }, 3000);
         }
     }
 );
