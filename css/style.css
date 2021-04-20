@@ -48,8 +48,14 @@
     border-radius: 999px;
 }
 
-.fa-circle {
-    color: white;
 
-    margin: 0 5px;
+.circle {
+    display: inline-block;
+
+    color: white;
+    margin: 0 10px;
+}
+
+.circle.active {
+    color: blue;
 }

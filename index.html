@@ -24,7 +24,7 @@
 
             <!-- Image -->
             <div class="img-container">
-                <img src="img/campagna.jpg" alt="">
+                <img :src="images[activeImage]" alt="">
             </div>
 
             <!-- Right Arrow -->
@@ -34,10 +34,9 @@
 
             <!-- Circles -->
             <div class="circles">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+                <div v-for="(image, index) in images" class="circle" :class="{ 'active' : index == activeImage }">
+                    <i class="fas fa-circle"></i>
+                </div>
             </div>
 
         </div>
